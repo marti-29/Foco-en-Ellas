@@ -1,0 +1,154 @@
+body {
+ background-color: #ff7d60;
+ color: #f36444;
+ font-family: sans-serif;
+}  
+
+
+h1 {
+  text-align: center;
+  color: #ffe3c9;
+  font-size: 40px;
+  margin-top: 70px;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  margin-left: 0.5cm;
+  margin-right: 0.5cm;
+  text-align: justify;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #ffce6f ;
+  padding: 2px 5px;
+  /* Padding grande que se achica al scrollear (con JS) */
+  transition: 0.4s;
+  /*transicion para cuando el padding baja */
+  position: fixed;
+  /* Para que quede fija en la pagina siempre */
+  width: 100%;
+  margin-left: -9px;
+  top: 0;
+  z-index: 2;
+  /* Esta en lo más arriba en superposición*/
+  height: 100px;
+  font-weight: bold;
+}
+
+/* navbar links */
+#navbar a {
+  float: inline-start;
+  color: #f36444;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 5px;
+  border-radius: 10px;
+}
+
+/*logo */
+#navbar #logo {
+  width: 2cm;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 3%;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: #ffe3c9;
+  color: #f01945;
+
+}
+
+/* active/current link */
+#navbar a.active {
+  background-color: #ffe3c9;
+  color: #f01945;
+}
+
+/* links a derecha*/
+#navbar-right {
+  float: right;
+  margin-top: 30px;
+}
+
+/* para que en pantallas chicas el navbar se vea vertical */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #navbar-right {
+    float: none;
+  }
+}
+
+.boton1 {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #ffe3c9;
+  color: #f36444;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 5%;
+  margin-top: 110px;
+}
+
+
+.boton1:hover {
+  background-color: #f36444;
+  color: #ffe3c9;  
+}
+
+
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  margin: 20px 0;
+  /* Margen superior e inferior */
+    margin-top: 100px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 3 columnas de igual ancho */
+  column-gap: 50px;
+  row-gap: 20px;
+  /* Espacio entre las imágenes */
+  width: 25cm;
+}
+
+.grid-item {
+  overflow: hidden;
+  background-color: #ffe3c9;
+}
+
+img {
+  width: 100%;
+  /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;
+  /* Mantener la relación de aspecto */
+}

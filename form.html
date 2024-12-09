@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <a href="./index.html" class="boton1">Inicio</a>
+    <div id="form">
+
+        <br>
+        <h2>
+            Ingrese sus datos:
+        </h2>
+
+        <form action="#" method="post">
+            <label for="nombre"></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            <br>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+            <br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu telefono" required>
+            <br>
+            <label for="favcolor">Selecciona tu color favorito:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <br>
+            <label for="archivo">Mandanos tu reseña y forma parte de nuestro equipo:</label>
+            <br>
+            <input type="file" id="archivo" name="archivo">
+            <br>
+            <label for="comentario">Dejanos tu comentario:</label>
+            <br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Dejanos tu comentario...">
+            </textarea>
+            <br>
+
+            <input type="checkbox" id="noticias" name="noticias" value="noticiasmail">
+            <label for="noticias"> Recibir noticias via mail</label>
+            <br>
+            <input type="checkbox" id="reseñas" name="reseñas" value="reseñasmail">
+            <label for="reseñas"> Recibir notificaciones de reseñas via mail</label>
+            <br>
+
+            <button id="boton2" type="submit">Suscribirme!</button>
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>

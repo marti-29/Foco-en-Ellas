@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Obligatorio1</title>
+  <style>
+     @font-face {
+            font-family: 'fuenteA';
+            src: url(fonts/fontawesome-webfont.eot);
+        }
+  </style>
+</head>
+
+<body>
+  <div class="Inicio">
+
+    <div id="navbar">
+      <img src=./imagenes/camara-de-cine-antigua.png alt="imagen logo" id="logo">
+      <div id="navbar-right">
+        <a class="active" href="index.html">Inicio</a>
+        <a href=#propuesta>Nuestra Propuesta</a>
+        <a href=#reseñas>Reseñas</a>
+        <a href=#noticias>Noticias</a>
+        <a href=#nosotras>Nosotras</a>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h1>FOCO EN ELLAS</h1>
+    <div id="logo1">
+      <img src="./imagenes/camara-de-cine-antigua.png" alt="imagen logo">
+    </div>
+
+  </div>
+  <section id="propuesta">
+    <br>
+    <div class="propuesta">
+
+      <br>
+      <h2 class="titulos2">Nuestra Propuesta</h2>
+      <p id="parrafo1">
+        Somos un grupo de creadoras audiovisuales que impulsamos y celebramos la creatividad y logros de otras mujeres
+        audiovisuales.
+        <br><br>
+        Reseñamos y compartimos obras de realizadoras, al igual que noticias de mujeres dentro de este rubro.
+      </p><br>
+
+    </div>
+  </section>
+
+  <section id="reseñas"><br><br>
+    <div class="reseñas">
+      <h2><a href="reseñas.html" class="boton2">Reseñas</a></h2>
+      <br><br>
+      <div class="slider">
+        <div class="slides">
+          <div class="slidefade">
+            <a href="./reseñas/reseñaLisaFrankenstein.html">
+              <img src="./imagenes/LizaFrank_poster.png" alt="Portada reseña de Lisa Frankenstein">
+            </a>
+          </div>
+          <div class="slidefade">
+            <a href="./reseñas/ReseñaSubstance.html">
+              <img src="./imagenes/TheSubstance_poster.png" alt="Portada reseña de The Substance">
+            </a>
+          </div>
+          <div class="slidefade">
+            <a href="./reseñas/reseñaAgarrameFuerte.html">
+              <img src="./imagenes/Agarramefuerte_poster.png" alt="Portada reseña de Agárrame Fuerte">
+            </a>
+          </div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <br><br>
+
+  <section id="noticias"><br>
+
+    <div class="noticias">
+      <h2><a href=noticias.html class="boton3">Noticias</a></h2>
+      <br>
+
+      <div class="scroll-container">
+        <a href="./noticias/noticiaTheWatchers.html"><img src="./imagenes/TheWatchersnoticia.png"
+            alt="Mina tocando el espejo-The Watchers"></a>
+        <a href="./noticias/noticiaTheSubstance.html"><img src="./imagenes/TheSubstancenoticia.png"
+            alt="Elisabeth sacandose labial-The Substance"></a>
+        <a href="./noticias/noticiaVirmiglio.html"><img src="./imagenes/Vermiglionoticia.png"
+            alt="Foto familiar-Vermiglio"></a>
+        <a href="./noticias/noticiaAgarrameFuerte.html"><img src="./imagenes/AgarrameFuertenoticia.png"
+            alt="Las tres amigas abrazadas-Agarrame Fuerte"></a>
+      </div>
+
+    </div>
+  </section>
+
+  <br>
+  <section id="nosotras"><br>
+    <h2 id="titulo3">Nosotras</h2>
+
+    <div class="contacto">
+      <br>
+      <div class="left-text">
+        <h5>Dirección y Gestión:</h5>
+        <p>Martina García</p><br>
+        <h5>Jefe de Redacción:</h5>
+        <p>Martina García</p><br>
+        <h5>Edición:</h5>
+        <p>Martina García y Lucía Parrilla</p><br>
+        <h5>Consejo editorial:</h5>
+        <p>Alfonsina Hernández</p><br>
+        <h5>Diseño Gráfico:</h5>
+        <p>Martina Symonds</p><br>
+        <h5>Programación, Mailing y Mantenimiento Web:</h5>
+        <p>Martina García</p><br>
+        <h5>Diseño Web:</h5>
+        <p>Martina García</p>
+        <br>
+      </div>
+      <div class="right-text">
+        <div class="suscript">
+          <h3>Suscripción</h3>
+          <p>Ingresa tu email y subscribite al
+            <br>newsletter de la revista:
+          </p>
+          <br>
+          <a href="./form.html" class="boton4">Subscribirme!
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="java.js"></script>
+</body>
+
+</html>
